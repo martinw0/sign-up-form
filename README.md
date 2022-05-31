@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/martinw0/sign-up-form)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://martinw0.github.io/sign-up-form/)
 
 ## My process
 
