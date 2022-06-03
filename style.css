@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: hsl(0deg, 100%, 74%);
+  background: hsl(0deg, 100%, 74%) url("./images/bg-intro-mobile.png");
 }
 
 main {
@@ -53,12 +53,45 @@ main {
   box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.15);
 }
 .form .card form input {
+  box-sizing: border-box;
   width: 100%;
-  height: 40px;
-  margin-bottom: 16px;
+  height: 50px;
+  outline: none;
+}
+.form .card form input[type=text], .form .card input[type=email], .form .card input[type=password] {
+  border: solid lightgray 1px;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .form .card form input[type=text]::placeholder, .form .card input[type=email]::placeholder, .form .card input[type=password]::placeholder {
-  color: black;
+  color: gray;
+}
+.form .card form div {
+  margin-bottom: 16px;
+  position: relative;
+}
+.form .card form div img {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+.form .card form div p {
+  display: none;
+  text-align: right;
+  margin-right: 0;
+  color: hsl(0deg, 100%, 74%);
+}
+.form .card form div.error img {
+  display: block;
+}
+.form .card form div.error p {
+  display: block;
+}
+.form .card form div.error input {
+  border: solid hsl(0deg, 100%, 74%) 1px !important;
 }
 .form .card form input[type=submit] {
   background-color: hsl(154deg, 59%, 51%);
@@ -66,6 +99,25 @@ main {
   color: white;
   border-radius: 10px;
   box-shadow: 0px 4px 0px 0px hsl(154deg, 57%, 44%);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.form .card p {
+  color: hsl(246deg, 25%, 77%);
+  font-size: 1.14rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 17px;
+}
+.form .card p span {
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
