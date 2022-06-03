@@ -36,6 +36,7 @@ body {
     @include media-min('tablet-down') {
         display: flex;
         flex-direction: column;
+        background: $red url('./images/bg-intro-desktop.png');
     }
 }
 html,body {

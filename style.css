@@ -17,6 +17,7 @@ body {
   body {
     display: flex;
     flex-direction: column;
+    background: hsl(0deg, 100%, 74%) url("./images/bg-intro-desktop.png");
   }
 }
 

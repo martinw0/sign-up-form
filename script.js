@@ -36,7 +36,7 @@ pass.addEventListener("input", function (event) {
 form.addEventListener("submit", function (event) {
     // Chaque fois que l'utilisateur tente d'envoyer les données
     // on vérifie que le champ email est valide.
-    if (!email.validity.valid) {
+    if (!email.validity.valid || email.value == "") {
   
         divEmail.classList.add('error');
 
