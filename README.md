@@ -48,7 +48,16 @@ Users should be able to:
 
 ### What I learned
 
+How to skip HTML form validation:
+
+```html
+<form novalidate></form>
+```
+
 ### Continued development
+
+- [Validate forms](https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation)
+- [js form validations](https://www.w3schools.com/js/js_validation.asp)
 
 ### Useful resources
 

@@ -13,9 +13,34 @@ html {
 body {
   background: hsl(0deg, 100%, 74%) url("./images/bg-intro-mobile.png");
 }
+@media screen and (min-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  html, body {
+    height: 100%;
+  }
+}
 
 main {
   margin: 70px 30px;
+}
+@media screen and (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    margin: 0 10vw;
+  }
 }
 
 .text {
@@ -30,6 +55,29 @@ main {
   margin-top: 30px;
   font-size: 1.6rem;
   font-weight: 400;
+}
+@media screen and (min-width: 900px) {
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: 0 30px;
+  }
+  .text h1 {
+    font-size: 4rem;
+  }
+  .text p {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .text h1 {
+    font-size: 5rem;
+  }
+  .text p {
+    font-size: 1.6rem;
+  }
 }
 
 .form button {
@@ -67,6 +115,9 @@ main {
 }
 .form .card form input[type=text]::placeholder, .form .card input[type=email]::placeholder, .form .card input[type=password]::placeholder {
   color: gray;
+}
+.form .card form input[type=text]:focus, .form .card input[type=email]:focus, .form .card input[type=password]:focus {
+  border: solid hsl(249deg, 10%, 26%) 1px;
 }
 .form .card form div {
   margin-bottom: 16px;
@@ -114,6 +165,14 @@ main {
 .form .card p span {
   color: hsl(0deg, 100%, 74%);
   font-weight: 700;
+}
+@media screen and (min-width: 900px) {
+  .form {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 footer {
